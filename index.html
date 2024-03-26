@@ -5,18 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
-            background-color: #f0f0f0; /* グレーの背景色 */
+            background-color: #f0f0f0;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh; /* 画面の高さいっぱいに表示 */
+            height: 100vh;
         }
         .message {
             font-size: 24px;
             padding: 10px;
-            background-color: white; /* メッセージの背景色 */
+            background-color: white;
             border-radius: 5px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            animation: dvdAnimation 5s infinite alternate;
+        }
+        @keyframes dvdAnimation {
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(200px, 200px);
+            }
         }
     </style>
 </head>
