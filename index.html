@@ -25,7 +25,8 @@
     <script>
         window.onload = function() {
             var password = prompt("パスワードを入力してください");
-            if(password === "000000") {
+            var encodedPassword = btoa(password);
+            if(encodedPassword === "MDAwMDAw") {
                 document.querySelector(".message").textContent = "考えとく";
             } else {
                 document.querySelector(".message").textContent = "もう一度試してください";
